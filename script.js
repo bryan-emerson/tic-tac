@@ -11,14 +11,16 @@ for (let i = 0; i < squares.length; i ++) {
     console.log(this.style.background)
     if (turn.innerText === 'Red Turn' && this.style.background === "blue") {
       this.style.background = "blue";
+      turn.innerText = "Red Turn";
     } else if (turn.innerText === 'Blue Turn' && this.style.background === "red") {
       this.style.background = "red";
+      turn.innerText = "Blue Turn";
     } else if (turn.innerText === 'Red Turn') {
       this.style.background = "Red";
       turn.innerText = "Blue Turn"
     } else if (turn.innerText === 'Blue Turn') {
       this.style.background = "blue";
-      turn.innerText = "Red Turn"
+      turn.innerText = "Red Turn";
     }
   })
 }

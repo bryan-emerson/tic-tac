@@ -14,7 +14,7 @@ let nine = squares[8];
 
 for (let i = 0; i < squares.length; i++) {
   squares[i].addEventListener('click', function () {
-    console.log(this.style.background)
+    // console.log(this.style.background)
     if (turn.innerText === 'Red Turn' && this.style.background === "blue") {
       this.style.background = "blue";
       turn.innerText = "Red Turn";
@@ -35,7 +35,7 @@ for (let i = 0; i < squares.length; i++) {
       turn.innerText = "Red Turn";
     }
     clickCount ++;
-    console.log(clickCount)
+    // console.log(clickCount)
     checkWinner()
   })
 }
